@@ -8,11 +8,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { Halaman2Component } from '../halaman2/halaman2.component';
 import { GlobalvarService } from './globalvar.service';
 import { CommonModule } from '@angular/common';
+import { Halaman3Component } from '../halaman3/halaman3.component';
 
 
 const ROUTES : Routes = [
   {path : 'halaman2', component:Halaman2Component},
-  {path : 'halaman2/:pJudul/:pIsi/:pTanggal/:pAction', component:Halaman2Component}
+  {path : 'halaman2/:pJudul/:pIsi/:pTanggal/:pAction', component:Halaman2Component},
+  {path : 'halaman3/:pJudul/:pIsi/:pTanggal/:pAction', component:Halaman3Component}
 ]
 
 

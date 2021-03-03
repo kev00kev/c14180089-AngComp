@@ -21,13 +21,17 @@ export class AppComponent  {
   iJudul = '';
   iIsi = '';
   iTanggal = '';
-  iAction = '';
+  iAction=true;
   dataglobal;
   datatext="";
  
   ADDNOTE(){
     //this.note.push({judul:this.iJudul,isi:this.iIsi,tanggal:this.iTanggal,action:'0'});
     this.router.navigate(["/halaman2/"+this.iJudul+"/"+this.iIsi+"/"+this.iTanggal+"/"+this.iAction]);
+  }
+    ADDNOTE2(){
+    //this.note.push({judul:this.iJudul,isi:this.iIsi,tanggal:this.iTanggal,action:'0'});
+    this.router.navigate(["/halaman3/"+this.iJudul+"/"+this.iIsi+"/"+this.iTanggal+"/"+this.iAction]);
   }
 
 }

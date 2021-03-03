@@ -6,7 +6,9 @@
     Tanggal : <input type="date" [(ngModel)]="iTanggal"/><br>
     Action : <input type="checkbox" [(ngModel)]="iAction"/>
   <br><br>
-  <button (click)="ADDNOTE()">ADD NOTE</button>
+  <button *ngIf="iAction == true" (click)="ADDNOTE2()">ADD NOTE</button>
+  <button *ngIf="iAction == false" (click)="ADDNOTE()">ADD NOTE</button>
+  
   <br><br>
   
 
