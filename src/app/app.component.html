@@ -1,33 +1,18 @@
 <hello name="{{ name }}"></hello>
 
   <br>
-    Judul &nbsp;&nbsp; &nbsp; :  <input type="text" [(ngModel)]="iJudul"/><br>
-    Isi &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : <input type="text" [(ngModel)]="iIsi"/><br>
-    Tanggal : <input type="date" [(ngModel)]="iTanggal"/>
+    Judul :  <input type="text" [(ngModel)]="iJudul"/><br>
+    Isi : <input type="text" [(ngModel)]="iIsi"/><br>
+    Tanggal : <input type="date" [(ngModel)]="iTanggal"/><br>
+    Action : <input type="checkbox" [(ngModel)]="iAction"/>
   <br><br>
-  <button (click)="ADDNOTE()">ADD NOTE</button>  
-  <button (click)="SAVE()">SAVE</button> 
+  <button (click)="ADDNOTE()">ADD NOTE</button>
   <br><br>
   
 
 
-  <table border="1" style="width:100%;">
-  <tr>
-    <th>Judul</th>
-    <th>Isi</th>
-    <th>Tanggal</th>
-    <th>Action</th>
-  </tr>
-  <tr *ngFor="let notes of note; let i = index">
-    <td *ngIf="i >= 1" align="center">{{notes.judul}}</td>
-    <td *ngIf="i >= 1" align="center">{{notes.isi}}</td>
-    <td *ngIf="i >= 1" align="center">{{notes.tanggal}}</td>
-    <td *ngIf="i >= 1" align="center">{{notes.action}}</td>
-  </tr>
-
-</table>
   
 
-  <!--<router-outlet></router-outlet>-->
+  <router-outlet></router-outlet>
 
 

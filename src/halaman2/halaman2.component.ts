@@ -13,11 +13,29 @@ export class Halaman2Component implements OnInit {
     private route : ActivatedRoute
   ) { }
 
-  paranama : any;
-
+  //parJudul : Array<string> = [];
+  //parIsi : Array<string> = [];
+  //parTanggal : Array<string> = [];
+  //parAction : Array<string> = [];
+  parJudul : string;
+  parIsi : string;
+  parTanggal : string;
+  parAction : string;
   ngOnInit() {
-    let isidata=this.route.snapshot.paramMap.get('data');
-    this.paranama = isidata;
+    let isiJudul=this.route.snapshot.paramMap.get('pJudul');
+    let isiIsi=this.route.snapshot.paramMap.get('pIsi');
+    let isiTanggal=this.route.snapshot.paramMap.get('pTanggal');
+    let isiAction=this.route.snapshot.paramMap.get('pAction');
+   
+    //this.parJudul.push(isiJudul);
+    //this.parIsi.push(isiIsi);
+    //this.parTanggal.push(isiTanggal);
+    //this.parAction.push(isiAction);
+    this.parJudul = isiJudul;
+    this.parIsi = isiIsi;
+    this.parTanggal = isiTanggal;
+    this.parAction = isiAction;
+
   }
 
 }

@@ -7,11 +7,12 @@ import { HelloComponent } from './hello.component';
 import { RouterModule, Routes } from '@angular/router';
 import { Halaman2Component } from '../halaman2/halaman2.component';
 import { GlobalvarService } from './globalvar.service';
+import { CommonModule } from '@angular/common';
 
 
 const ROUTES : Routes = [
   {path : 'halaman2', component:Halaman2Component},
-  {path : 'home/:data', component:Halaman2Component}
+  {path : 'halaman2/:pJudul/:pIsi/:pTanggal/:pAction', component:Halaman2Component}
 ]
 
 
@@ -20,6 +21,7 @@ const ROUTES : Routes = [
   imports:      [ 
     BrowserModule, 
     FormsModule, 
+    CommonModule,
     RouterModule.forRoot(ROUTES) ],
   declarations: [ AppComponent, HelloComponent ],
   bootstrap:    [ AppComponent ],

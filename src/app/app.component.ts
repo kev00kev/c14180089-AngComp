@@ -8,7 +8,7 @@ import { GlobalvarService } from './globalvar.service';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = ', g';
+  name = ', ADD SOME NOTE';
 
    constructor(
     private router : Router,
@@ -26,12 +26,8 @@ export class AppComponent  {
   datatext="";
  
   ADDNOTE(){
-    this.note.push({judul:this.iJudul,isi:this.iIsi,tanggal:this.iTanggal,action:'0'});
-  }
-  SAVE(){
-     this.globalvar.setdata(this.note)
-     this.dataglobal = this.globalvar.getdata();
-     this.router.navigate(["/halaman2/"+this.note]);
+    //this.note.push({judul:this.iJudul,isi:this.iIsi,tanggal:this.iTanggal,action:'0'});
+    this.router.navigate(["/halaman2/"+this.iJudul+"/"+this.iIsi+"/"+this.iTanggal+"/"+this.iAction]);
   }
 
 }
