@@ -7,10 +7,12 @@
     Action : <input type="checkbox" [(ngModel)]="iAction"/>
   <br><br>
   <button *ngIf="iAction == true" (click)="ADDNOTE2()">ADD NOTE</button>
+  
   <button *ngIf="iAction == false" (click)="ADDNOTE()">ADD NOTE</button>
   
   <br><br>
-  
+  <input *ngIf="iAction == true" type="hidden" value="'https://image.flaticon.com/icons/png/128/1828/1828884.png'"[(ngModel)]="fav"/>
+  <input *ngIf="iAction == false" type="hidden" value="'https://image.flaticon.com/icons/png/128/1828/1828970.png'" [(ngModel)]="fav"/>
 
 
   

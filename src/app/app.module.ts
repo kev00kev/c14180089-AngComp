@@ -13,6 +13,7 @@ import { Halaman3Component } from '../halaman3/halaman3.component';
 
 const ROUTES : Routes = [
   {path : 'halaman2', component:Halaman2Component},
+  {path : 'halaman3', component:Halaman3Component},
   {path : 'halaman2/:pJudul/:pIsi/:pTanggal/:pAction', component:Halaman2Component},
   {path : 'halaman3/:pJudul/:pIsi/:pTanggal/:pAction', component:Halaman3Component}
 ]

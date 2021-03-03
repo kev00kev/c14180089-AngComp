@@ -24,7 +24,7 @@ export class AppComponent  {
   iAction=true;
   dataglobal;
   datatext="";
- 
+  fav="";
   ADDNOTE(){
     //this.note.push({judul:this.iJudul,isi:this.iIsi,tanggal:this.iTanggal,action:'0'});
     this.router.navigate(["/halaman2/"+this.iJudul+"/"+this.iIsi+"/"+this.iTanggal+"/"+this.iAction]);
